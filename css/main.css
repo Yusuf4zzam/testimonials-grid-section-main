@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+.dark-box h4,
+.dark-box p {
+  color: #19212e;
+}
+
+.dark-box span {
+  color: #48556a;
+}
+
+.dark-box q {
+  color: #48556a;
+}
+
+.light-box h4,
+.light-box p {
+  color: white;
+}
+
+.light-box span {
+  color: #ecf2f8;
+}
+
+.light-box q {
+  color: #cfcfcf;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #ecf2f8;
+  font-size: 13px;
+  min-height: 100vh;
+  padding: 15px 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .testmonilas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  grid-gap: 30px;
+}
+
+.container .box {
+  padding: 25px;
+  border-radius: 7px;
+}
+
+.container .box .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.container .box .person .image-box {
+  margin-right: 15px;
+}
+
+.container .box .person .image-box img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.container .box .content p {
+  margin-bottom: 15px;
+}
+
+.container .box .content q {
+  font-size: 12px;
+}
+
+.container .box .content * {
+  line-height: 1.5;
+}
+
+.container .box:first-of-type {
+  background: #7541c8;
+  grid-column: span 4;
+}
+
+.container .box:nth-child(2) {
+  background: #48556a;
+  grid-column: span 2;
+}
+
+.container .box:nth-child(3) {
+  background: white;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.container .box:nth-child(4) {
+  background: white;
+  grid-column: span 2;
+}
+
+.container .box:last-of-type {
+  background: #19212e;
+  grid-column: span 4;
+}
+
+@media (max-width: 767px) {
+  .testmonilas .box {
+    grid-column: span 8 !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */
